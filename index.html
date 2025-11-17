@@ -1,63 +1,261 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Global Hire Assist | Your Trusted Visa Partner</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GlobalHireAssist — Visa & Employment Services</title>
+  <meta name="description" content="Trusted partner for global visa and employment opportunities & Employment Services">
+  <meta property="og:description" content="Trusted partner for global visa and employment opportunities. Expert guidance, secure processing, and professional support from start to finish.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#001f3f">
+
+  <style>
+    :root{
+      --bg-1:#001f3f;
+      --bg-2:#00112a;
+      --accent:#007BFF;
+      --accent-dark:#0056b3;
+      --text:#ffffff;
+      --muted:rgba(255,255,255,0.88);
+      --radius:8px;
+      --container-max:1200px;
+      --gap:40px;
+      --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    html,body{height:100%;margin:0}
+    body{
+      font-family:var(--font-sans);
+      background:#fff;
+      color:#111;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+
+    /* Simple header */
+    header{
+      background:#ffffff;
+      border-bottom:1px solid #eef2f6;
+      position:sticky;
+      top:0;
+      z-index:40;
+    }
+    .site-wrap{
+      max-width:var(--container-max);
+      margin:0 auto;
+      padding:18px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .brand{ font-weight:700; color:#0b2b4a; text-decoration:none; font-size:1.05rem }
+    nav a{ color:#0b2b4a; text-decoration:none; margin-left:18px; font-weight:600; }
+    nav a.btn-cta{ background:var(--accent); color:#fff; padding:8px 14px; border-radius:8px; }
+
+    /* HERO SECTION */
+    .hero{
+      background: linear-gradient(135deg, var(--bg-2), var(--bg-1));
+      color:var(--text);
+      padding:72px 20px;
+    }
+
+    .container{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      max-width:var(--container-max);
+      margin:0 auto;
+      gap:var(--gap);
+    }
+
+    .hero-text{
+      flex:1 1 520px;
+      min-width:260px;
+    }
+
+    .hero-text h1{
+      font-size:clamp(1.75rem, 4vw, 3rem);
+      margin:0 0 18px;
+      line-height:1.12;
+      color:var(--text);
+    }
+
+    .hero-text p{
+      font-size:clamp(1rem, 2.2vw, 1.125rem);
+      margin:0 0 22px;
+      color:var(--muted);
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:14px;
+      margin-bottom:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 26px;
+      border-radius:var(--radius);
+      text-decoration:none;
+      font-weight:600;
+      transition:transform .16s ease, box-shadow .16s ease;
+      outline: none;
+    }
+
+    .btn:focus-visible{
+      box-shadow:0 0 0 4px rgba(0,123,255,0.18);
+      transform:translateY(-1px);
+    }
+
+    .btn-primary{
+      background-color:var(--accent);
+      color:#fff;
+      border:1px solid transparent;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus{ background-color:var(--accent-dark); text-decoration:none; }
+
+    .btn-secondary{
+      background:transparent;
+      color:var(--accent);
+      border:2px solid var(--accent);
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus{ background:var(--accent); color:#fff; }
+
+    .badge-row{
+      list-style:none;
+      display:flex;
+      gap:22px;
+      padding:0;
+      margin:12px 0 0;
+      font-weight:700;
+      color:var(--muted);
+      flex-wrap:wrap;
+    }
+
+    .hero-image{
+      flex:1 1 420px;
+      text-align:center;
+      min-width:220px;
+    }
+
+    .hero-image img{
+      max-width:100%;
+      height:auto;
+      border-radius:10px;
+      display:inline-block;
+      box-shadow:0 8px 30px rgba(0,0,0,0.45);
+    }
+
+    /* small credit under image */
+    .img-credit{
+      display:block;
+      margin-top:8px;
+      font-size:0.85rem;
+      color:rgba(255,255,255,0.72);
+      text-decoration:none;
+    }
+
+    @media (max-width:900px){
+      .container{ flex-direction:column-reverse; text-align:center; }
+      .hero-text h1{ font-size:clamp(1.5rem, 6vw, 2.25rem); }
+      .badge-row{ justify-content:center; gap:12px; }
+      header .site-wrap{ padding:12px 16px }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .btn{ transition:none; transform:none; }
+    }
+
+    /* Small main content placeholder to make the page feel complete */
+    main{ padding:40px 20px; max-width:var(--container-max); margin:0 auto; }
+    footer{ padding:28px 20px; color:#6b7280; font-size:0.95rem; text-align:center; border-top:1px solid #eef2f6; }
+  </style>
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="assets/logo.png" alt="Global Hire Assist Logo" />
-      <h1>Global Hire Assist</h1>
+    <div class="site-wrap">
+      <a class="brand" href="/">GlobalHireAssist</a>
+      <nav aria-label="Primary">
+        <a href="/services">Services</a>
+        <a href="/about">About</a>
+        <a href="/contact" class="btn-cta">Contact</a>
+      </nav>
     </div>
-    <nav>
-      <a href="#about">About Us</a>
-      <a href="#programs">Programs</a>
-      <a href="#blog">Blog</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
-  <section class="hero">
-    <h2>Your Trusted Visa Partner</h2>
-    <p>Connecting applicants to real opportunities across the United States — based in Mesa, Arizona.</p>
-    <button onclick="window.location.href='#application'">Get Started</button>
+
+  <!-- HERO SECTION -->
+  <section class="hero" aria-label="Hero — Global visa and employment services">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Your Trusted Partner for Global Visa & Employment Opportunities</h1>
+        <p>We simplify your journey abroad with expert visa guidance, secure processing, and professional support from start to finish.</p>
+
+        <div class="hero-buttons" role="group" aria-label="Primary call to actions">
+          <a href="/apply" class="btn btn-primary" aria-label="Start your application">Start Your Application</a>
+          <a href="/contact" class="btn btn-secondary" aria-label="Request a free consultation">Free Consultation</a>
+        </div>
+
+        <ul class="badge-row" aria-hidden="false">
+          <li>✔ Fast Processing</li>
+          <li>✔ Transparent Fees</li>
+          <li>✔ Trusted Global Network</li>
+        </ul>
+      </div>
+
+      <div class="hero-image" aria-hidden="false">
+        <picture>
+          <!-- WebP for supported browsers -->
+          <source type="image/webp"
+            srcset="
+              https://images.unsplash.com/photo-1542223616-1d7d9d2e9f3a?w=400&fm=webp&q=60 400w,
+              https://images.unsplash.com/photo-1542223616-1d7d9d2e9f3a?w=800&fm=webp&q=60 800w,
+              https://images.unsplash.com/photo-1542223616-1d7d9d2e9f3a?w=1200&fm=webp&q=60 1200w,
+              https://images.unsplash.com/photo-1542223616-1d7d9d2e9f3a?w=1800&fm=webp&q=60 1800w"
+            sizes="(min-width:900px) 420px, 100vw">
+
+          <!-- Fallback formats -->
+          <source
+            srcset="
+              https://images.unsplash.com/photo-1542223616-1d7d9d2e9f3a?w=400&q=60 400w,
+              https://images.unsplash.com/photo-1542223616-1d7d9d2e9f3a?w=800&q=60 800w,
+              https://images.unsplash.com/photo-1542223616-1d7d9d2e9f3a?w=1200&q=60 1200w,
+              https://images.unsplash.com/photo-1542223616-1d7d9d2e9f3a?w=1800&q=60 1800w"
+            sizes="(min-width:900px) 420px, 100vw">
+
+          <img
+            src="https://images.unsplash.com/photo-1542223616-1d7d9d2e9f3a?w=800&q=60"
+            alt="Professionals advising a client on international relocation and travel"
+            loading="lazy"
+            decoding="async">
+        </picture>
+
+        <a class="img-credit" href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Photo: Unsplash</a>
+      </div>
+    </div>
   </section>
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are a visa and recruitment consultancy dedicated to helping individuals obtain legitimate work, visit, and H-2A/H-2B visas to the United States. Headquartered in Mesa, Arizona, we ensure a smooth process from application to embassy interview scheduling.</p>
-  </section>
-  <section id="programs">
-    <h2>Programs We Offer</h2>
-    <ul>
-      <li><a href="#application">Apply Work Visa</a></li>
-      <li><a href="#application">Visit Visa</a></li>
-      <li><a href="#application">Tourist Visa</a></li>
-      <li><a href="#application">H-2A Program</a></li>
-      <li><a href="#application">H-2B Program</a></li>
-    </ul>
-  </section>
-  <section id="blog">
-    <h2>Our Blog</h2>
-    <p>Get the latest insights, visa tips, and travel updates on our <a href="blog.html" target="_blank" class="blog-btn">Visit Blog</a>.</p>
-  </section>
-  <section id="application">
-    <h2>Application Form</h2>
-    <p>Submit your application securely via our JotForm portal below:</p>
-    <iframe title="Global Hire Assist Application Form"
-      src="https://form.jotform.com/252064943772058"
-      width="100%" height="900" frameborder="0" style="border:none;" allowfullscreen>
-    </iframe>
-  </section>
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:globalhireassist@gmail.com">globalhireassist@gmail.com</a></p>
-    <p>WhatsApp: <a href="https://wa.me/14472763403" target="_blank">+1 (447) 276-3403</a></p>
-  </section>
+
+  <main>
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">How we help</h2>
+      <p>We provide visa advisory, document collection, employer matching, and end-to-end support so you can move abroad confidently.</p>
+    </section>
+  </main>
+
   <footer>
-    <p>© 2025 Global Hire Assist. All Rights Reserved.</p>
-    <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms & Conditions</a></p>
+    © <span id="year"></span> GlobalHireAssist — All rights reserved.
   </footer>
+
+  <script>
+    // small runtime bits: set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
