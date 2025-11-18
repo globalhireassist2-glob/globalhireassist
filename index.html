@@ -940,3 +940,211 @@
 
 </body>
 </html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Global Hire Assist</title>
+  <meta name="description" content="Latest articles and visa guidance from Global Hire Assist. Learn how to pass visa interviews, prepare documents and avoid common rejections." />
+  <meta name="theme-color" content="#001f3f">
+
+  <!-- Basic JSON-LD (site) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Global Hire Assist Blog",
+    "url":"https://yourdomain.com/blog"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#061021;
+      --card:#0f1a2a;
+      --accent:#0ea5e9;
+      --text:#ffffff;
+      --muted: #b7c3d9;
+      --container:1200px;
+      --radius:12px;
+      --gap:24px;
+      --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:var(--font-sans);-webkit-font-smoothing:antialiased}
+    .site-wrap{max-width:var(--container);margin:0 auto;padding:28px 20px}
+    header.page-header{text-align:center;margin-bottom:28px}
+    header.page-header h1{font-size:2rem;margin:0 0 8px;color:var(--accent)}
+    header.page-header p{margin:0;color:var(--muted)}
+
+    /* Posts grid */
+    .posts-grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap:var(--gap);
+      margin-top:28px;
+    }
+
+    .post-card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.04);
+      padding:20px;
+      border-radius:var(--radius);
+      transition: transform .18s ease, box-shadow .18s ease;
+      min-height:170px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .post-card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,0.45)}
+
+    .post-title{font-size:1.05rem;margin:0;color:#fff}
+    .post-excerpt{color:var(--muted);flex:1}
+    .post-meta{font-size:0.88rem;color:rgba(255,255,255,0.6)}
+    .read-more{display:inline-block;margin-top:8px;padding:8px 14px;border-radius:8px;background:var(--accent);color:#000;text-decoration:none;font-weight:700}
+
+    /* Featured area (optional) */
+    .featured{
+      display:flex;
+      gap:20px;
+      align-items:stretch;
+      margin-bottom:22px;
+    }
+    .featured .hero{
+      flex:1;
+      padding:28px;border-radius:12px;background:linear-gradient(135deg,#001f3f, #000d1a);
+    }
+    .featured h3{margin:0 0 8px;color:var(--accent)}
+    .featured p{color:var(--muted)}
+
+    /* CMS hint area (hidden visually but helpful) */
+    .cms-hint{font-size:0.85rem;color:rgba(255,255,255,0.5);margin-top:16px}
+
+    footer{max-width:var(--container);margin:40px auto 60px;padding:0 20px;text-align:center;color:rgba(255,255,255,0.6)}
+    @media (max-width:700px){header.page-header h1{font-size:1.5rem}}
+  </style>
+</head>
+<body>
+  <div class="site-wrap">
+
+    <header class="page-header" role="banner" aria-labelledby="blog-heading">
+      <h1 id="blog-heading">Insights & Guides — Global Hire Assist Blog</h1>
+      <p>Practical tips, interview guides, and document checklists for visa applicants.</p>
+    </header>
+
+    <!-- Optional featured post (static or CMS-driven) -->
+    <section class="featured" aria-labelledby="featured-heading">
+      <div class="hero" id="featured-heading" aria-hidden="false">
+        <h3>Featured</h3>
+        <h2 style="margin:6px 0 12px;color:#fff">How to Pass Your Visa Interview Successfully</h2>
+        <p style="color:var(--muted)">Practical, tested tips to help you prepare and present your case confidently.</p>
+        <p><a class="read-more" href="/blog/how-to-pass-your-visa-interview">Read article</a></p>
+      </div>
+    </section>
+
+    <!-- POSTS GRID (CMS: replace the static blocks with your CMS loop) -->
+    <section aria-labelledby="posts-heading">
+      <h2 id="posts-heading" style="margin:0 0 12px;color:var(--accent)">Latest Posts</h2>
+
+      <div class="posts-grid" role="list">
+        <!-- Example static post cards - CMS note below -->
+        <article class="post-card" role="listitem" aria-labelledby="post1-title">
+          <h3 id="post1-title" class="post-title">How to Pass Your Visa Interview Successfully</h3>
+          <p class="post-excerpt">Step-by-step interview prep, sample questions and confidence-building techniques.</p>
+          <div class="post-meta">Nov 18, 2025 — Visa Guides</div>
+          <a class="read-more" href="/blog/how-to-pass-your-visa-interview" aria-label="Read How to Pass Your Visa Interview Successfully">Read</a>
+        </article>
+
+        <article class="post-card" role="listitem" aria-labelledby="post2-title">
+          <h3 id="post2-title" class="post-title">Top 7 Documents You Need for USA Visa</h3>
+          <p class="post-excerpt">A practical checklist of documents to avoid last-minute delays at the embassy.</p>
+          <div class="post-meta">Nov 10, 2025 — Checklists</div>
+          <a class="read-more" href="/blog/top-7-documents-usa-visa">Read</a>
+        </article>
+
+        <article class="post-card" role="listitem" aria-labelledby="post3-title">
+          <h3 id="post3-title" class="post-title">Why Applicants Get Rejected and How to Avoid It</h3>
+          <p class="post-excerpt">Common rejection reasons and how to prevent them with better documentation and honesty.</p>
+          <div class="post-meta">Oct 28, 2025 — Advice</div>
+          <a class="read-more" href="/blog/why-applicants-get-rejected">Read</a>
+        </article>
+
+        <article class="post-card" role="listitem" aria-labelledby="post4-title">
+          <h3 id="post4-title" class="post-title">How Global Hire Assist Supports Your Journey Abroad</h3>
+          <p class="post-excerpt">An overview of our services and how we work with applicants to deliver results.</p>
+          <div class="post-meta">Oct 12, 2025 — Company</div>
+          <a class="read-more" href="/blog/how-global-hire-assist-supports">Read</a>
+        </article>
+      </div>
+
+      <!-- CMS Integration Hint (replace with your CMS collection loop):
+           Example for Jekyll:
+           {% for post in site.posts %}
+             (render a post-card with post.title, post.excerpt, post.url, post.date)
+           {% endfor %}
+      -->
+      <p class="cms-hint">CMS-ready: Replace the static article blocks with your CMS loop (Jekyll/Hugo/NetlifyCMS).</p>
+    </section>
+
+  </div>
+
+  <footer role="contentinfo">
+    © <span id="year"></span> Global Hire Assist — Insights & Guides
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms & Conditions — Global Hire Assist</title>
+  <meta name="description" content="Short terms and conditions for Global Hire Assist: service scope and fee policy." />
+  <meta name="theme-color" content="#001f3f">
+  <style>
+    :root{
+      --bg:#061021; --text:#fff; --muted:#b7c3d9; --container:1000px;
+      --accent:#0ea5e9; --radius:12px;
+    }
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    .wrap{max-width:var(--container);margin:40px auto;padding:20px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:28px;border:1px solid rgba(255,255,255,0.04)}
+    h1{color:var(--accent);margin:0 0 12px}
+    p{color:var(--muted);line-height:1.6}
+    ul{padding-left:18px;color:var(--muted)}
+    footer{max-width:var(--container);margin:36px auto 60px;padding:0 20px;text-align:center;color:rgba(255,255,255,0.6)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="main" aria-labelledby="t-title">
+      <h1 id="t-title">Terms &amp; Conditions</h1>
+
+      <p>Global Hire Assist provides professional visa advisory and recruitment support services. We do our best to
+      provide accurate guidance and transparent processing assistance.</p>
+
+      <p><strong>Important:</strong> Visa approval decisions are made solely by the issuing embassy or immigration authority.
+      Global Hire Assist cannot influence or guarantee the outcome of any visa application. All applicants must comply
+      with the laws and requirements of the destination country.</p>
+
+      <p>Fees paid to Global Hire Assist or our trusted agents cover consultation, document preparation, administrative support,
+      and processing assistance. They do not guarantee approval.</p>
+
+      <p>By using our services, applicants confirm they will provide truthful, accurate, and complete information, and they
+      agree to follow applicable immigration laws and the terms of our engagement.</p>
+
+      <h2 style="margin-top:18px;color:#fff">Contact</h2>
+      <p style="color:var(--muted)">If you have questions about these terms, email <a href="mailto:support@globalhireassist.com" style="color:var(--accent)">support@globalhireassist.com</a>.</p>
+    </div>
+  </div>
+
+  <footer>© <span id="year"></span> Global Hire Assist</footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
