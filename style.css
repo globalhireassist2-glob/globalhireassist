@@ -1,65 +1,80 @@
-body {
-  font-family: 'Poppins', sans-serif;
+/* WHY CHOOSE US SECTION */
+.why-choose {
+  padding: 56px 20px;
+  background: linear-gradient(180deg, #000d1a, #001b33);
+  color: #ffffff;
+}
+
+.why-choose .container {
+  max-width: var(--container-max, 1200px);
+  margin: 0 auto;
+}
+
+.why-choose h2 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Cards Layout */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+/* Card Appearance */
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 20px;
+  color: #e6e6e6;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+  transition: transform .2s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+}
+
+/* Icon Styling */
+.card-icon {
+  color: #0094ff;
+  margin-bottom: 12px;
+}
+
+/* Titles */
+.card h3 {
   margin: 0;
-  background-color: #f9fafc;
-  color: #222;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
 }
-header {
-  background-color: #001f3f;
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+/* Paragraph */
+.card p {
+  margin-top: 6px;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;
+  line-height: 1.45;
 }
-header .logo {
-  display: flex;
-  align-items: center;
+
+/* RESPONSIVE GRID */
+@media (max-width: 1100px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-header .logo img {
-  height: 50px;
-  margin-right: 10px;
-}
-nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.hero {
-  background: url('https://images.unsplash.com/photo-1502920917128-1aa500764b7a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-}
-.hero button {
-  background-color: #001f3f;
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-h2 {
-  color: #001f3f;
-  margin-bottom: 10px;
-}
-.blog-btn {
-  background-color: navy;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-footer {
-  background-color: #001f3f;
-  color: white;
-  text-align: center;
-  padding: 15px;
+
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .why-choose {
+    padding: 40px 16px;
+  }
 }
